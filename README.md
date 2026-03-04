@@ -42,7 +42,7 @@ for i, job_title in enumerate(job_titles):
         ax[i].set_xticks([])
 
 fig.suptitle('Likelihood of Skills Requested in US Job Postings', fontsize=15)
-fig.tight_layout(h_pad=0.5)  # fix the overlap
+fig.tight_layout(h_pad=0.5)  #  overlap
 plt.show()
 ```
 
