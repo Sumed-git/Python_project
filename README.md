@@ -130,3 +130,20 @@ plt.show()
 ### Result
 
 ![Salary based on skills](3_Project_overview/Images/Analytics_with_seaborn.png).
+
+# Key Insights
+
+1. Python Dominates Technical Roles
+Python is one of the most important programming languages in the data field. It is required across all three roles — Data Analyst, Data Scientist, and Data Engineer. However, the demand is highest for Data Scientists (72%) and Data Engineers (65%), showing its strong importance in advanced data work as shown in [2_Skill.ipynb](3_Project_overview/2_Skill.ipynb).
+
+2. SQL is Essential for Data Analysis
+SQL is the most commonly requested skill for Data Analysts and Data Scientists. It appears in more than 50% of job postings, highlighting the importance of database querying and data extraction in these roles.
+
+3. Python is Critical for Data Engineering
+For Data Engineers, Python appears in 68% of job postings, making it the most demanded skill. This reflects the role of Python in data pipeline development, automation, and large-scale data processing.
+
+4. Core Skill Foundation in Data Careers
+Overall, Python and SQL form the core skill foundation across most data-related roles, while the specific tools vary depending on the responsibilities of each role.
+
+### Conclusion:
+These insights highlight the key skills required in the data industry and show how different roles emphasize different technologies, from analysis tools to large-scale data infrastructure.
