@@ -128,4 +128,5 @@ plt.show()
 ```
 
 ### Result
-![Salary based on skills](3_Project_overview\Images\Analytics_with_seaborn.png).
+
+![Salary based on skills](3_Project_overview/Images/Analytics_with_seaborn.png).
