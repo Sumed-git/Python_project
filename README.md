@@ -1,5 +1,5 @@
 # The Analysis
-##  What are the most demanded skills for the top 3 popular data roles?
+##  1. What are the most demanded skills for the top three popular data roles?
 
 To find the most demanded skills for the top three data roles, I first identified which jobs are the most popular. Then I selected the top five skills required for each of these roles.
 
@@ -52,7 +52,7 @@ Most demanding jobs
 ![Visualize plot of three most demanding skills](3_Project_overview/Images/3_most_demand_skill.png)
 
 
-# Data Analyst Skills: Salary vs Demand
+# 2.  Data Analyst Skills: Salary vs Demand
 
 This project shows the difference between highest paid skills and most in-demand skills for data analysts.
 
@@ -145,5 +145,77 @@ For Data Engineers, Python appears in 68% of job postings, making it the most de
 4. Core Skill Foundation in Data Careers
 Overall, Python and SQL form the core skill foundation across most data-related roles, while the specific tools vary depending on the responsibilities of each role.
 
-### Conclusion:
-These insights highlight the key skills required in the data industry and show how different roles emphasize different technologies, from analysis tools to large-scale data infrastructure.
+
+
+
+# 3. Trending Top Skills for Data Analysts in the US (2023)
+
+ **monthly trend of the top 5 most demanded skills for Data Analysts in the United States during 2023**. The percentages represent the **likelihood of a skill appearing in job postings** each month. [3_Skill_trend.ipynb](3_Skill_trend.ipynb)
+
+
+### Key Insights
+
+* **SQL** is the most consistently requested skill throughout the year, appearing in **over 50% of job postings** every month. This highlights its importance as a core skill for data analysts.
+
+* **Excel** remains the **second most demanded skill**, with demand staying around **40–45%** for most of the year. This indicates that spreadsheet-based analysis is still widely used in many organizations.
+
+* **Python** shows **moderate demand** and experiences a noticeable increase toward the **end of the year**, suggesting growing interest in programming-based data analysis.
+
+* **Tableau** maintains **steady demand**, typically appearing in about **30–35% of job postings**, emphasizing the importance of data visualization and dashboarding skills.
+
+* **Power BI** has the **lowest demand among the five skills**, but it remains consistently present in around **20–23% of postings**, reflecting its continued use in business intelligence workflows.
+
+### Overall Trend
+
+The chart shows that **data analysis roles require a combination of database querying, spreadsheet analysis, programming, and visualization tools**. SQL and Excel dominate the market, while tools like Python, Tableau, and Power BI complement analytical workflows.
+
+### Skills Covered in the Analysis
+
+* SQL
+* Excel
+* Python
+* Tableau
+* Power BI
+
+### Conclusion
+
+For aspiring data analysts, focusing on **SQL, Excel, and Python**, along with visualization tools like **Tableau or Power BI**, can significantly improve job opportunities in the data analytics field.
+
+
+
+
+### Visualize data
+```Python
+df_plot = df_DA_US_percent.iloc[:, :5]
+
+sns.set_theme(style='ticks')
+sns.lineplot(data=df_plot, dashes=False, palette='tab10')
+sns.despine()
+
+plt.title('Trending Top Skills for Data Analysts in the US')
+plt.ylabel('Likelihood in Job Posting')
+plt.xlabel('2023')
+plt.legend().remove()
+
+from matplotlib.ticker import PercentFormatter
+
+ax = plt.gca()
+ax.yaxis.set_major_formatter(PercentFormatter(decimals=0))
+
+for i in range(5):
+    plt.text(11.2, df_plot.iloc[-1, i], df_plot.columns[i])
+
+```
+
+
+### Result
+
+![Trending skills](3_project_overview/Images/Trending_skills.png)
+
+*Bar graph visualization on trending skill
+
+
+
+*
+
+    
