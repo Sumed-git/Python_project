@@ -210,12 +210,8 @@ for i in range(5):
 
 ### Result
 
-![Trending skills](3_project_overview/Images/Trending_skills.png)
+![Trending skills](3_Project_overview/Images/Trending_skills.png)
 
-*Bar graph visualization on trending skill
-
-
-
-*
+*Bar graph visualization on trending skill*
 
     
